@@ -25,7 +25,7 @@ For build generation, Node is required. Ensure Node's available and run `npm i` 
 - Method will be available as _flyt.**flatten([])**_
     - Browser: `flyt.flatten([])`
     - Node: `var flyt = require('./flyt'); flyt.flatten([]);`
-- Test cases coming soon...
+- Run tests calling `npm run test` from CLI
 
 ### Drawback
 
