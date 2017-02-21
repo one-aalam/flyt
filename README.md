@@ -17,8 +17,12 @@ one step away from `npm publish`.
 - New builds could be created anytime running `npm build` or `npm build:min`
 - To update examples code run `npm update:browser-build` or `npm update:node-build`. Distributed file is updated in `/dist` before
   preparing examples.
-- Open [index.html](/examples/browser/index.html)(Browser) to or fire `node examples/node/index.js`(Node) to check code's
-  functionality for respective environment.
+- Open [index.html](/examples/browser/index.html)(Browser) or fire `node examples/node/index.js`(Node) to check code's
+  functionality for respective environment. 
+- Method will be available as _flyt.**flatten([])**_
+    - Browser: `flyt.flatten([])`
+    - Node: `var flyt = require('./flyt'); flyt.flatten([]);`
+- Test cases coming soon...
 
 ### Drawback
 
