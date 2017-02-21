@@ -5,9 +5,11 @@
   "main": "dist/flyt.js",
   "module": "src/index.js",
   "scripts": {
-    "build:browser": "webpack --env=build && cp dist/flyt.js examples/browser/",
-    "build:node": "webpack --env=build && cp dist/flyt.js examples/node/ && node examples/node",
     "dev": "webpack --env=dev --progress --profile --colors --watch",
+    "build": "webpack --env=build",
+    "build:min": "webpack -p",
+    "update:browser-build": "npm build && cp dist/flyt.js examples/browser/",
+    "update:node-build": "npm build && cp dist/flyt.js examples/node/ && node examples/node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
