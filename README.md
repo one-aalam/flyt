@@ -13,6 +13,13 @@ one step away from `npm publish`.
 
 1. Bundles library code into all library targets ie CommonJS, AMD, ES2015 exports, UMD.
 
+### Usage
+- New builds could be created anytime running `npm build` or `npm build:min`
+- To update examples code run `npm update:browser-build` or `npm update:node-build`. Distributed file is updated in `/dist` before
+  preparing examples.
+- Open [index.html](/examples/browser/index.html)(Browser) to or fire `node examples/node/index.js`(Node) to check code's
+  functionality for respective environment.
+
 ### Drawback
 
 Built for demonstration purposes.
