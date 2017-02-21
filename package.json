@@ -1,0 +1,24 @@
+{
+  "name": "flyt",
+  "version": "1.0.0",
+  "description": "Super-light javascript library to flatten arrays",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/one-aalam/flyt.git"
+  },
+  "keywords": [
+    "Javascript",
+    "ES6",
+    "Array"
+  ],
+  "author": "Aftab Alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/one-aalam/flyt/issues"
+  },
+  "homepage": "https://github.com/one-aalam/flyt#readme"
+}
