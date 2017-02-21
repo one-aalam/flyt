@@ -15,7 +15,7 @@ one step away from `npm publish`.
 
 ### Usage
 - New builds could be created anytime running `npm build` or `npm build:min`
-- To update examples code run `npm update:browser-build` or `npm update:node-build`. Distributed file is updated in `/dist` before
+- To update examples code, run `npm update:browser-build` or `npm update:node-build`. Distributable file is updated in `/dist` before
   preparing examples.
 - Open [index.html](/examples/browser/index.html)(Browser) or fire `node examples/node/index.js`(Node) to check code's
   functionality for respective environment. 
