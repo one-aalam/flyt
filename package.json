@@ -2,8 +2,12 @@
   "name": "flyt",
   "version": "1.0.0",
   "description": "Super-light javascript library to flatten arrays",
-  "main": "src/index.js",
+  "main": "dist/flyt.js",
+  "module": "src/index.js",
   "scripts": {
+    "build:browser": "webpack --env=build && cp dist/flyt.js examples/browser/",
+    "build:node": "webpack --env=build && cp dist/flyt.js examples/node/ && node examples/node",
+    "dev": "webpack --env=dev --progress --profile --colors --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/one-aalam/flyt/issues"
   },
-  "homepage": "https://github.com/one-aalam/flyt#readme"
+  "homepage": "https://github.com/one-aalam/flyt#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "eslint": "^3.16.0",
+    "eslint-loader": "^1.6.1",
+    "webpack": "^2.2.1"
+  }
 }
