@@ -8,9 +8,9 @@
     "dev": "webpack --env=dev --progress --profile --colors --watch",
     "build": "webpack --env=build",
     "build:min": "webpack -p",
-    "update:browser-build": "npm build && cp dist/flyt.js examples/browser/",
-    "update:node-build": "npm build && cp dist/flyt.js examples/node/ && node examples/node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update:browser-build": "npm run build && cp dist/flyt.js examples/browser/",
+    "update:node-build": "npm run build && cp dist/flyt.js examples/node/ && node examples/node",
+    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -32,8 +32,10 @@
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-es2015-webpack": "^6.4.3",
+    "chai": "^3.5.0",
     "eslint": "^3.16.0",
     "eslint-loader": "^1.6.1",
+    "mocha": "^3.2.0",
     "webpack": "^2.2.1"
   }
 }
