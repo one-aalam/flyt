@@ -13,6 +13,9 @@ one step away from `npm publish`.
 
 1. Bundles library code into all library targets ie CommonJS, AMD, ES2015 exports, UMD.
 
+### Setup
+For build generation, Node is required. Ensure Node's available and run `npm i` in project's root directory. Find build generation step in [Usage](#Usage) section(next). 
+
 ### Usage
 - New builds could be created anytime running `npm build` or `npm build:min`
 - To update examples code, run `npm update:browser-build` or `npm update:node-build`. Distributable file is updated in `/dist` before
